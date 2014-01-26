@@ -10,7 +10,7 @@ REDMINE_DIR="$DIR/redmine"
 # IMPORTANT: This script assumes ruby 1.9.3 is installed
 command -v bundle > /dev/null 2>&1 || { echo 'bundler required'; exit 1; }
 command -v fpm > /dev/null 2>&1 || { echo 'fpm required'; exit 1; }
-yum list installed | grep ImageMagick-devel > /dev/null 2>&1 || sudo yum install -y ImageMagic-devel
+yum list installed | grep ImageMagick-devel > /dev/null 2>&1 || sudo yum install -y ImageMagick-devel
 yum list installed | grep mysql-devel > /dev/null 2>&1 || sudo yum install -y mysql-devel
 
 # Download Redmine 2.4.2
